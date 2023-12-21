@@ -6,8 +6,8 @@ public class TwoSum {
 
     public static void main(String [] args) {
 
-        int a [] = {1,2,3,4,5,2};
-        int res [] = twoSum(a,7);
+        int a [] = {1,2,3,4,5,3};
+        int res [] = twoSum(a,8);
         System.out.println(res[0]);
         System.out.println(res[1]);
     }

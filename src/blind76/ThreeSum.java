@@ -9,6 +9,7 @@ public class ThreeSum {
     public static void main(String [] args) {
 
         int a [] = {1,2,4,-2,1,0,-1,4,8,-5,3};
+        Arrays.stream(a).reduce(1,(x,y)-> x*y );
         List<List<Integer>> res ;
         res = getThreeSum(a);
         System.out.println(res);
@@ -31,7 +32,7 @@ public class ThreeSum {
                 if(sum==0) {
                     res.add(Arrays.asList(a[i],a[num2Index],a[num3Index]));
                     num3Index--;
-                    while (num3Index>num2Index && a[num3Index]==a[num3Index+1]) num3Index--;
+                    while (num3Index>num2Index && a[num3Index]==a[num3Index-1]) num3Index--;
                 }
                 else if (sum>0)
                     num3Index--;

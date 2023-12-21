@@ -30,6 +30,7 @@ public class LongestSubstringWithoutRepeatingChars {
 
             visited[str.charAt(i)] = false;
             i++;
+
         }
         return max;
     }
